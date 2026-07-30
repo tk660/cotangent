@@ -1,0 +1,59 @@
+/* ==========================================================================
+   style.css  —  THE OVERALL LOOK OF YOUR WHOLE SITE
+   --------------------------------------------------------------------------
+   This ONE file controls the "theme" (background, colors, fonts) for EVERY
+   page that links to it. Change something here once and it updates on every
+   page automatically.
+
+   Rule of thumb:
+     - The .html files hold your CONTENT  (the words, images, and links).
+     - This .css file holds the STYLE     (colors, background, fonts).
+
+   Anything between  a slash-star  and  a star-slash  is a comment. Comments
+   are just notes for you; the browser ignores them.
+   ========================================================================== */
+
+
+/* The <body> is the entire visible page. */
+body {
+
+  /* ----- BACKGROUND ----- */
+  background-color: #1a0033;      /* deep purple. Put any color name or #hexcode here. */
+
+  /* Want a classic 90s MOVING background? Save an animated .gif into this
+     same folder (e.g. stars.gif), then turn the line below ON by deleting
+     the two comment marks around it (the slash-star at the start and the
+     star-slash at the end), and put your file's name in the quotes: */
+  /* background-image: url("stars.gif"); */
+
+
+  /* ----- DEFAULT TEXT ----- */
+  color: #ffff99;                 /* pale yellow text */
+  font-family: "Comic Sans MS", Verdana, sans-serif;   /* peak 1998 */
+  font-size: 16px;
+
+  text-align: center;             /* centers everything on the page */
+  margin: 20px;
+}
+
+
+/* ----- LINK COLORS ----- */
+a          { color: #00ffff; }    /* a link you have NOT clicked yet (cyan) */
+a:visited  { color: #ff66ff; }    /* a link you HAVE already visited (pink) */
+a:hover    { color: #ffffff; }    /* a link while the mouse is over it (white) */
+
+
+/* ----- HEADINGS ----- */
+h1 { color: #00ff00; font-size: 46px; }   /* biggest heading (lime green) */
+h2 { color: #ff9900; font-size: 28px; }   /* smaller heading (orange) */
+
+
+/* ----- OPTIONAL: BLINKING TEXT (very 90s) -----
+   Add  class="blink"  to any tag to make it flash,
+   for example:  <span class="blink">NEW!</span>   */
+.blink {
+  animation: blinker 1s step-start infinite;
+}
+@keyframes blinker {
+  50% { opacity: 0; }
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- ^ Always line 1. It just tells the browser "this is an HTML page." -->
+
+<html lang="en">
+<head>
+  <!-- The <head> holds SETUP info. Nothing in here shows up on the page. -->
+
+  <meta charset="UTF-8">                 <!-- lets you use any character or emoji -->
+  <title>My Awesome 90s Site</title>     <!-- the text shown in the browser TAB -->
+
+  <!-- This line loads the shared look from style.css (in this same folder).
+       Every page with this line gets the same colors/background/fonts. -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+<!-- ========================================================================
+     EVERYTHING between <body> and </body> is what people SEE on the page.
+     To change your page, edit the text and images below.
+     ======================================================================== -->
+
+
+  <!-- ===== SCROLLING BANNER (the classic 90s <marquee>) =====
+       Slides text across the screen. Just change the words inside.
+       scrollamount = how fast it moves. -->
+  <marquee scrollamount="6">
+    &#9733; Welcome to my corner of the World Wide Web! &#9733; Grab a snack and stay a while! &#9733;
+  </marquee>
+
+
+  <!-- ===== MAIN TITLE =====
+       <h1> is the biggest heading. Its color and size come from style.css. -->
+  <h1>Welcome to My Website</h1>
+
+
+  <!-- A "style" written right on a tag changes ONLY that tag.
+       Here we set the size and color directly:
+         font-size: 20px;   makes the text bigger
+         color: #ff66ff;    makes it pink  -->
+  <p style="font-size: 20px; color: #ff66ff;">
+    The <b>coolest</b> place on the internet since 2026.
+  </p>
+
+
+  <!-- ===== AN IMAGE =====
+       <img> puts a picture on the page. The three parts:
+         src   = the file name of the image (the file must be in THIS folder)
+         alt   = words shown if the image fails to load
+         width = how wide it is, in pixels (height adjusts on its own)
+
+       TO USE YOUR OWN PICTURE:
+         1. Upload an image (say  me.jpg ) to your GitHub repo.
+         2. Change  src="placeholder.svg"  below to  src="me.jpg" -->
+  <img src="placeholder.svg" alt="A photo of me" width="300">
+
+  <!-- <br> = a single line break, like pressing Enter once. -->
+  <br>
+
+  <!-- Small caption under the image. -->
+  <p>Updated <b>July 29, 2026</b></p>
+
+
+  <!-- ===== A DIVIDER LINE =====
+       <hr> draws a horizontal line across the page. -->
+  <hr>
+
+
+  <!-- ===== A PARAGRAPH WITH BASIC FORMATTING =====
+       <p> = a paragraph of text.
+       Inside it you can use:
+         <b>bold</b>   <i>italic</i>   <u>underline</u>
+       and <span style="..."> to color just a few words. -->
+  <p>
+    Hi! My name is <b>Your Name</b> and this is my personal website.
+    I built it because I love <i>Friends</i>, <u>web design</u>, and
+    <span style="color: #00ff00;">bright green text</span>.
+  </p>
+
+
+  <!-- Make a whole chunk bigger by setting font-size on the <p>. -->
+  <p style="font-size: 22px;">
+    This paragraph is a bit larger than the normal text.
+  </p>
+
+  <hr>
+
+
+  <!-- ===== NAVIGATION: LINKS TO YOUR OTHER PAGES =====
+       <a href="..."> makes a clickable link.
+       To link to another page on YOUR site, use its file name (e.g. faq.html).
+       The words between <a> and </a> are what the visitor clicks. -->
+  <p style="font-size: 20px;">
+    <a href="index.html">Home</a> |
+    <a href="faq.html">FAQ</a> |
+    <a href="contents.html">Contents</a>
+  </p>
+
+  <hr>
+
+
+  <!-- ===== 90s GIF ZONE =====
+       Animated .gif files work EXACTLY like the image above.
+       Download some free retro gifs, upload them to your repo, and point
+       the src at them. (Right now these just reuse the placeholder.) -->
+  <p>
+    <img src="placeholder.svg" alt="Under construction" width="150">
+    <img src="placeholder.svg" alt="New!" width="150">
+  </p>
+
+
+  <!-- The "blink" class is defined in style.css and makes text flash. -->
+  <p class="blink" style="color: #00ff00; font-size: 24px;">
+    ~*~ SIGN MY GUESTBOOK ~*~
+  </p>
+
+
+  <!-- ===== EMAIL LINK =====
+       "mailto:" opens the visitor's email app so they can write to you. -->
+  <p>
+    Questions? <a href="mailto:you@example.com">E-mail me!</a>
+  </p>
+
+  <hr>
+
+
+  <!-- ===== FOOTER (small print at the bottom) ===== -->
+  <p style="font-size: 12px;">
+    Best viewed in Netscape Navigator 4.0 at 800&#215;600.<br>
+    You are visitor #000001
+  </p>
+
+
+</body>
+</html>
