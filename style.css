@@ -57,3 +57,35 @@ h2 { color: #ff9900; font-size: 28px; }   /* smaller heading (orange) */
 @keyframes blinker {
   50% { opacity: 0; }
 }
+
+
+/* ----- JOURNAL: COLLAPSIBLE FOLDERS AND NOTES -----
+   These style the <details> and <summary> tags used on journal.html.
+   A <details> is a box that opens and closes when you click its <summary>. */
+
+/* An outer FOLDER (e.g. a month). */
+details {
+  text-align: left;                       /* journal text reads better left-aligned */
+  max-width: 600px;                        /* keeps a tidy readable column */
+  margin: 8px auto;                        /* the "auto" centers the box on the page */
+  padding: 6px 12px;
+  border: 2px solid #00ffff;               /* cyan outline for folders */
+  background-color: rgba(0, 0, 0, 0.25);   /* slightly darker so it stands out */
+}
+
+/* The clickable title line of any folder or note. */
+summary {
+  cursor: pointer;                         /* shows the little hand pointer */
+  font-weight: bold;
+  color: #00ffff;
+}
+
+/* A NOTE sitting INSIDE a folder (a <details> inside a <details>). */
+details details {
+  border-color: #ff9900;                   /* orange outline for individual notes */
+  margin: 8px 0;
+}
+details details summary {
+  color: #ffff99;                          /* pale yellow, lighter than the folder title */
+  font-weight: normal;
+}

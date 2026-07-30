@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Journal - My Awesome 90s Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- ========================================================================
+     THE JOURNAL
+     Each note is a collapsible box. Click a title to open or close it.
+     No scrolling through everything — closed notes take up almost no space.
+
+     HOW IT WORKS:
+       <details>  = a box that opens/closes
+       <summary>  = the clickable title line of that box
+     A <details> placed INSIDE another <details> becomes a note inside a folder.
+
+     TO ADD A NEW NOTE: copy one of the small blocks marked "ONE NOTE" below,
+     paste it inside a folder, and change the title and text.
+     TO START A NOTE OR FOLDER OPEN: add the word  open  like <details open>.
+     Newest entries usually go at the TOP.
+     ======================================================================== -->
+
+  <h1>My Journal</h1>
+  <p style="font-size: 18px;">Notes into the abyss.</p>
+
+  <p style="font-size: 14px;">(click any title to expand it)</p>
+
+  <hr>
+
+
+  <!-- ===================== FOLDER: one month ===================== -->
+  <!-- This folder starts OPEN because of the word "open". -->
+  <details open>
+    <summary>&#128193; July 2026</summary>
+
+    <!-- ---------- ONE NOTE (copy this whole block to add another) ---------- -->
+    <details>
+      <summary>Late-night thoughts &mdash; July 28</summary>
+      <p>
+        Type your journal entry here. You can use <b>bold</b>, <i>italic</i>,
+        and line breaks<br>just like anywhere else on the site.
+      </p>
+    </details>
+    <!-- ---------- END ONE NOTE ---------- -->
+
+    <details>
+      <summary>Good coffee today &mdash; July 20</summary>
+      <p>Another entry. Short and sweet.</p>
+    </details>
+
+  </details>
+
+
+  <!-- ===================== FOLDER: an older month ===================== -->
+  <!-- No "open" word, so this folder starts CLOSED. -->
+  <details>
+    <summary>&#128193; June 2026</summary>
+
+    <details>
+      <summary>An older entry &mdash; June 5</summary>
+      <p>Older notes stay tucked away in here until you click to open them.</p>
+    </details>
+
+  </details>
+
+
+  <hr>
+
+  <!-- Navigation (same links as every other page). -->
+  <p style="font-size: 20px;">
+    <a href="index.html">Home</a> |
+    <a href="faq.html">FAQ</a> |
+    <a href="contents.html">Contents</a> |
+    <a href="journal.html">Journal</a> |
+    <a href="guestbook.html">Guestbook</a>
+  </p>
+
+</body>
+</html>
